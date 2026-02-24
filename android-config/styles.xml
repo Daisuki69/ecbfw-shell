@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base app theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--
+        ✅ NO SPLASH SCREEN - app opens directly to WebView
+        ✅ Black window background so there's no white flash before Vercel loads
+        ✅ No action bar (fullscreen WebView)
+    -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <!-- Used during launch only - intentionally same as above (no splash) -->
+    <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar" />
+
+</resources>
